@@ -4,6 +4,33 @@
   <meta charset="UTF-8">
   <title>Mod Info Viewer</title>
   <style>
+   <div id="music-popup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(18,18,18,0.9); color: white; display: flex; align-items: center; justify-content: center; flex-direction: column; z-index: 9999;">
+  <h2 style="font-size: 1.5em; margin-bottom: 20px;">آیا مایلید موسیقی پس‌زمینه پخش شود؟</h2>
+  <div>
+    <button onclick="playMusic()" style="padding: 10px 20px; margin: 10px; background: #00bfff; border: none; border-radius: 10px; font-size: 1em; color: white; cursor: pointer;">بله</button>
+    <button onclick="denyMusic()" style="padding: 10px 20px; margin: 10px; background: #444; border: none; border-radius: 10px; font-size: 1em; color: white; cursor: pointer;">خیر</button>
+  </div>
+</div>
+
+<audio id="my-audio">
+  <source src="freakyMenu.ogg" type="audio/mpeg">
+</audio>
+
+<script>
+  function playMusic() {
+    document.getElementById('my-audio').play();
+    document.getElementById('music-popup').style.display = 'none';
+  }
+  function denyMusic() {
+    document.getElementById('music-popup').style.display = 'none';
+  }
+    <div style="margin-top: 20px;">
+  <h2 style="color: red; font-size: 2em; text-align: center;">42% - In Progress</h2>
+  <div style="width: 100%; background: #333; border-radius: 10px; height: 25px; margin: 10px 0;">
+    <div style="width: 42%; height: 100%; background: red; border-radius: 10px;"></div>
+  </div>
+</div>
+</script>
     body {
       margin: 0;
       padding: 20px;
@@ -134,15 +161,5 @@
 <a href="https://rubika.ir/Toast4831" target="_blank">
   <img src="toastie.png" alt="Telegram Link" style="max-width: 100%; border-radius: 12px; margin-top: 20px;">
 </a>
-<div id="start-audio" style="text-align: center; margin-top: 40px;">
-  <button onclick="document.getElementById('my-audio').play()" style="padding: 10px 20px; font-size: 1.2em; border-radius: 10px; background-color: #00bfff; color: white; border: none; cursor: pointer;">
-    پخش موسیقی
-  </button>
-</div>
-
-<audio id="my-audio">
-  <source src="freakyMenu.ogg" type="audio/mpeg">
-  مرورگر شما از پخش صدا پشتیبانی نمی‌کند.
-</audio>
 </body>
 </html>
