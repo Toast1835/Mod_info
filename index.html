@@ -73,11 +73,21 @@
 </audio>
 
 <!-- نوار درصد پیشرفت -->
-<div style="margin-top: 20px;">
-  <h2 style="color: red; font-size: 2em; text-align: center;">42% - In Progress</h2>
+<div id="progress-container" style="margin-top: 20px;">
+  <h2 id="progress-text" style="color: red; font-size: 2em; text-align: center;">Loading...</h2>
   <div style="width: 100%; background: #333; border-radius: 10px; height: 25px; margin: 10px 0;">
-    <div style="width: 42%; height: 100%; background: red; border-radius: 10px;"></div>
+    <div id="progress-bar" style="height: 100%; background: red; border-radius: 10px;"></div>
   </div>
+</div>
+
+<script>
+  // فقط این عدد رو تغییر بده:
+  let progressPercent = 2;
+
+  // اعمال درصد به متن و نوار
+  document.getElementById('progress-text').innerText = progressPercent + "% - In Progress";
+  document.getElementById('progress-bar').style.width = progressPercent + "%";
+</script>
 </div>
 
 <!-- تیتر اصلی -->
