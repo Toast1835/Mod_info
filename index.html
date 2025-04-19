@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Mod Info Viewer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      user-select: none;
+    }
+    h1, h2 { color: #00bfff; }
+    .editable {
+      background-color: #333;
+      color: #ffd700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #222;
+    }
+    .section-title {
+      color: #00bfff;
+      font-size: 1.4em;
+      margin-top: 30px;
+    }
+  </style>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('keydown', function (e) {
+      if ((e.ctrlKey || e.metaKey) && ['s', 'u', 'p'].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</head>
+<body>
+
+
+<h1>Mod Information - Version 1</h1>
+
+<h2>Editable Sections Summary:</h2>
+<ul>
+    <li><span class="editable">Mod Name</span></li>
+    <li><span class="editable">Story Chapters</span></li>
+    <li><span class="editable">Character Names & Status</span></li>
+    <li><span class="editable">Song Names & BPM</span></li>
+    <li><span class="editable">Stage Names & Status</span></li>
+    <li><span class="editable">Dialogue Fields</span></li>
+    <li><span class="editable">Custom Sound & Cutscene Options</span></li>
+</ul>
+
+<h2>General Info</h2>
+<ul>
+    <li><b>Mod Name:</b> <span class="editable">EBW</span></li>
+    <li><b>Version:</b> 1.0</li>
+    <li><b>Engine Base:</b> Codename Engine (✓)</li>
+    <li><b>Game Mode:</b> Story Mode / Freeplay / NOT Explained</li>
+    <li><b>Story Chapters:</b> <span class="editable">1 (More chapters planned)</span></li>
+</ul>
+
+<h2 class="section-title">Characters</h2>
+<table>
+    <tr><th>Character Name</th><th>Role</th><th>Status</th></tr>
+    <tr><td><span class="editable">Boyfriend</span></td><td>Player</td><td><span class="editable">Planned for update</span></td></tr>
+    <tr><td><span class="editable">Girlfriend</span></td><td>Support</td><td><span class="editable">Planned for update</span></td></tr>
+    <tr><td><span class="editable">New Character</span></td><td>Opponent</td><td><span class="editable">Planned for update</span></td></tr>
+    <tr><td><span class="editable">???</span></td><td>Secret Boss</td><td><span class="editable">Planned for update</span></td></tr>
+</table>
+
+<h2 class="section-title">Songs</h2>
+<table>
+    <tr><th>Song Name</th><th>Status</th><th>BPM</th></tr>
+    <tr><td><span class="editable">???</span></td><td><span class="editable">Planned for update</span></td><td><span class="editable">TBD</span></td></tr>
+    <tr><td><span class="editable">???</span></td><td><span class="editable">Planned for update</span></td><td><span class="editable">TBD</span></td></tr>
+    <tr><td><span class="editable">???</span></td><td><span class="editable">Planned for update</span></td><td><span class="editable">TBD</span></td></tr>
+</table>
+
+<h2 class="section-title">Stages</h2>
+<table>
+    <tr><th>Stage Name</th><th>???</th><th>Status</th></tr>
+    <tr><td><span class="editable">???</span></td><td>???</td><td><span class="editable">Implemented</span></td></tr>
+    <tr><td><span class="editable">???</span></td><td>???</td><td><span class="editable">Not implemented yet</span></td></tr>
+</table>
+
+<h2 class="section-title">Dialogue</h2>
+<ul>
+    <li>Intro Dialogue: <span class="editable">Coming soon</span></li>
+    <li>Mid-Song Dialogue: Not planned</li>
+    <li>Outro Dialogue: <span class="editable">To be added</span></li>
+    <li>Maybe Not gonna use it: <span class="editable">Yes/No</span></li>
+</ul>
+
+<h2 class="section-title">Mechanics & Visuals</h2>
+<table>
+    <tr><th>Feature</th><th>Status</th></tr>
+    <tr><td>Health Bar Customization</td><td>Implemented</td></tr>
+    <tr><td>Dynamic Camera Zoom</td><td>Implemented</td></tr>
+    <tr><td>Flashbacks / Cutscenes</td><td><span class="editable">Planned for future</span></td></tr>
+    <tr><td>Particle Effects</td><td><span class="editable">In development</span></td></tr>
+    <tr><td>Shader Effects</td><td>Implemented</td></tr>
+</table>
+
+<h2 class="section-title">UI & Menus</h2>
+<table>
+    <tr><th>UI Element</th><th>Status</th></tr>
+    <tr><td>Custom Main Menu</td><td><span class="editable">Work in progress</span></td></tr>
+    <tr><td>Song Select Icons</td><td>Implemented</td></tr>
+    <tr><td>Pause Menu Custom</td><td><span class="editable">Not implemented yet</span></td></tr>
+    <tr><td>Pixel Game</td><td><span class="editable">if demo mod agreed surely making</span></td></tr>
+</table>
+
+<h2 class="section-title">Other Features</h2>
+<ul>
+    <li>Dialogue Language: English (<span class="editable">Persian Planned</span>)</li>
+    <li>Voice Acting: <span class="editable">Not planned</span></li>
+    <li>Custom Sound Effects: <span class="editable">Coming soon</span></li>
+    <li>Animated Cutscenes: <span class="editable">Planned for future versions</span></li>
+</ul>
+
+
+</body>
+</html>
